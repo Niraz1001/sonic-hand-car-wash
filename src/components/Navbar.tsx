@@ -60,8 +60,8 @@ const Navbar = () => {
         <div className="relative shadow-custom-lg z-50">
             <nav className="max-w-7xl mx-auto px-5 md:px-8 lg:px-8">
                 {/* Top Section - Logo & Contact Info */}
-                <div className="flex justify-between  items-center py-4 gap-10">
-                    {/* Logo */}
+                <div className="flex justify-between items-center  py-4 gap-2 lg:gap-10">
+                    {/* Logo */} 
                     <div>
                         <Image
                             src="/img/a95a4eeaa13507e45be83dac9ee1b36b.png"
@@ -72,15 +72,15 @@ const Navbar = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="flex space-x-8">
+                    <div className="flex space-x-1 lg:space-x-8 ">
                         {DetailsInfo.map((item, idx) => (
-                            <div key={idx} className="flex items-center space-x-3">
+                            <div key={idx} className="flex items-start lg:items-center space-x-3 ">
                                 <div className="hidden bg-blue-500 p-3  rounded-full md:flex items-center justify-center">
                                     {item.Icon}
                                 </div>
                                 <div>
-                                    <h5 className="font-semibold text-[12px] md:text-[13px] lg:text-sm">{item.name}</h5>
-                                    <p className="text-gray-600 text-[12px] md:text-[13px] lg:text-sm">{item.details}</p>
+                                    <h5 className="font-semibold text-[11px] md:text-[13px] lg:text-sm">{item.name}</h5>
+                                    <p className="text-gray-600 text-[11px] md:text-[13px] lg:text-sm">{item.details}</p>
                                 </div>
                             </div>
                         ))}
