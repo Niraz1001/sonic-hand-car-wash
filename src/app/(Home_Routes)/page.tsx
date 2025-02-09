@@ -71,7 +71,7 @@ const HomePage = () => {
 
       <div className='bg-white mx-5 md:mx-5 lg:mx-12 p-5 rounded-md shadow-lg mt-[-25px] relative z-10'>
         <h1 className='text-[25px] md:text-[30px] lg:text-[48px] font-bold text-center mb-5 md:mb-9'>It’s time to <span style={{ color: "#2291EA" }}>Shine.</span></h1>
-        <div className='container max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid grid-cols-[55%_45%]'>
+        <div className='container max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid grid-cols-[55%_45%] md:gap-5 gap-3'>
           <div>
             <h4 className='text-[16px] md:text-[20px] lg:text-[24px] font-bold mb-2'>Sonic Hand Car Wash</h4>
             <div className='flex items-center gap-2 mb-5'>
@@ -89,7 +89,7 @@ const HomePage = () => {
           </div>
 
           <div>
-            <div className='flex items-start gap-3 mb-5 text-[12px] md:text-[16px]'>
+            <div className='flex items-start gap-1 md:gap-3 mb-5 text-[12px] md:text-[16px]'>
               <p><HelpCircleIcon size={18} color='black' className='mt-1' /></p>
               <div>
                 <p className='leading-none'>Get 10 premium hand car washes every month with our exclusive subscription plan!</p>
