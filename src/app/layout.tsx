@@ -3,10 +3,9 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-
 export const metadata: Metadata = {
-  title: "Sonic Hand Car wash",
-  description: "Wash your in a model Way",
+  title: "Sonic Hand Car Wash",
+  description: "Wash your car in a modern way",
 };
 
 export default function RootLayout({
@@ -16,10 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      </head>
       <body>
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

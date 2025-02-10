@@ -5,12 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { DetailsInfo, SocialIcon } from "../types";
 import { NavItems } from "../app/constant";
+import { usePathname } from "next/navigation";
 
 
 
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     // Contact Details
     const DetailsInfo: DetailsInfo[] = [
@@ -57,7 +59,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="relative shadow-custom-lg z-50">
+        <div className="relative shadow-custom z-50">
             <nav className="max-w-7xl mx-auto px-5 md:px-8 lg:px-8">
                 {/* Top Section - Logo & Contact Info */}
                 <div className="flex justify-between items-center  py-4 gap-2 lg:gap-10">
@@ -109,7 +111,7 @@ const Navbar = () => {
                     <div className="hidden md:flex md:space-x-[30px] text-lg lg:space-x-[66px]">
                         {NavItems.map((item, idx) => (
                             <Link key={idx} href={item.href}>
-                                <div className="relative text-[16px] before:absolute before:w-[20px] before:h-[1.59px] before:bg-[#0B0B0B] before:bottom-[-8px] before:left-0 before:transition-all before:duration-300 hover:before:w-full">
+                                <div className={`relative text-[16px] before:absolute before:w-[20px] before:h-[1.59px] before:bg-[#0B0B0B] before:bottom-[-8px] before:left-0 before:transition-all before:duration-300 ${pathname === item.href ? `before:w-full` :  `before:w-[20px] hover:before:w-full`}`}>
                                     {item.name}
                                 </div>
 
