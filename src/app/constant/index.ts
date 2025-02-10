@@ -1,5 +1,5 @@
 
-import { NavItem, Services, SubscriptionPlans, Testimonials } from "@/src/types";
+import { Faq, NavItem, Services, SubscriptionPlans, Testimonials } from "@/src/types";
 
 export const NavItems: NavItem[] = [
     { name: "Home", href: "/" },
@@ -81,3 +81,18 @@ export const SubscriptionPlanData: SubscriptionPlans[] = [
       isPopular: false,
     },
   ];
+
+  export const FaqData: Faq[]= [
+    {
+        title: "Do I need an appointment for a car wash?",
+        des: "No, walk-ins are welcome! However, booking in advance ensures quicker service."
+    },
+    {
+        title: "What payment methods do you accept?",
+        des: "We accept cash, credit/debit cards, and digital wallets."
+    },
+    {
+        title: "How long does a car wash take?",
+        des: "A basic hand wash takes approximately 20-30 minutes."
+    },
+  ]

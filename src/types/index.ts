@@ -1,8 +1,8 @@
 import { JSX } from "react";
 
 export interface NavItem {
-    name:string;
-    href:string;
+    name: string;
+    href: string;
 }
 
 export interface DetailsInfo {
@@ -14,7 +14,7 @@ export interface DetailsInfo {
 export interface SocialIcon {
     icon: JSX.Element;
     href: string;
-}  
+}
 
 export interface HeroSection {
     title?: string;
@@ -22,7 +22,7 @@ export interface HeroSection {
 }
 
 export interface Services {
-    img : string;
+    img: string;
     title: string;
     description: string;
     price: string;
@@ -30,7 +30,7 @@ export interface Services {
 
 export interface Testimonials {
     img: string;
-    name : string;
+    name: string;
     title: string;
     description: string;
 }
@@ -47,10 +47,15 @@ export interface SubscriptionCards {
 }
 
 
-export  interface SubscriptionPlans {
+export interface SubscriptionPlans {
     title: string;
     price: string;
     features: string[];
     isPopular?: boolean; // Optional property
     button?: string;
-  }
+}
+
+export interface Faq {
+    title: string;
+    des: string;
+}
