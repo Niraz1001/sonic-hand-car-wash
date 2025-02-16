@@ -1,5 +1,6 @@
 import HeroSection from '@/src/components/Herosection'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const About = () => {
@@ -55,7 +56,7 @@ const About = () => {
           <div className='max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-16 text-center'>
               <h4 className='text-base md:text-[30px] text-[#2291EA] font-bold'>Ready to give your car the shine it deserves?</h4>
               <p className='my-3 md:my-7 text-base md:text-[30px] text-[#4B5563]'>Get in touch with us today</p>
-              <button className='bg-[#2291EA] py-1 px-4 md:py-3 md:px-8 text-sm md:text-[18px] rounded-full text-white'>Contact Us</button>
+              <button className='bg-[#2291EA] py-1 px-4 md:py-3 md:px-8 text-sm md:text-[18px] rounded-full text-white'><Link href={"/enquiry"}>Contact Us</Link></button>
           </div>
     </div>
   )

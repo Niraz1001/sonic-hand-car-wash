@@ -6,6 +6,7 @@ import Image from 'next/image'
 import React from 'react'
 import { ServicesCard, TestimonialData } from '../constant'
 import Testimonial from '@/src/components/Testimonial'
+import Link from 'next/link'
 
 
 const HomePage = () => {
@@ -94,7 +95,7 @@ const HomePage = () => {
               <div>
                 <p className='leading-none'>Get 10 premium hand car washes every month with our exclusive subscription plan!</p>
                 <p className='my-5'>Hassle-free car care, great savings, and ultimate convenience.</p>
-                <button className='bg-[#2291EA] px-3 md:px-10 py-2 rounded-lg mt-1 text-white'>Learn more →</button>
+                <button className='bg-[#2291EA] px-3 md:px-10 py-2 rounded-lg mt-1 text-white'><Link href={"/about"}>Learn more →</Link></button>
               </div>
             </div>
           </div>
@@ -108,7 +109,7 @@ const HomePage = () => {
       <div className='container max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-10 md:py-16 '>
         <h4 className='text-center text-[25px] md:text-[32px] font-bold'>Our services</h4>
         <p className='mt-5 text-center text-[12px] md:text-[16px] px-5 md:px-5'>Experience premium car care services tailored to keep your vehicle looking its absolute best.</p>
-        <div className='mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-8'>
+        <div className='mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-5'>
           {
             ServicesCard.map((item, idx) => (
               <div key={idx}>
@@ -159,7 +160,7 @@ const HomePage = () => {
                   </div>
                 ))
               }
-              <button className='bg-[#2291EA] px-10 py-[14px] rounded-full mt-5 text-white'>Learn more →</button>
+              <button className='bg-[#2291EA] px-10 py-[14px] rounded-full mt-5 text-white'><Link href={"/about"}>Learn more →</Link> </button>
             </div>
 
           </div>

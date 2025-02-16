@@ -18,22 +18,28 @@ export const CustomerSupport: NavItem[] = [
 
 export const ServicesCard: Services[] = [
     {
-        img: "/img/car1.png",
+        img: "/img/services1.webp",
         title: "Basic Hand Wash",
         description: "Thorough exterior wash using premium products and hand-drying for a pristine finish.",
         price: "$29.99"
     },
     {
-        img: "/img/car2.png",
+        img: "/img/services2.webp",
         title: "Deluxe Wash & Wax",
         description: "Complete exterior treatment including premium wax for long-lasting protection and shine.",
         price: "$59.99"
     },
     {
-        img: "/img/car3.png",
+        img: "/img/services3.webp",
         title: "Interior Cleaning",
         description: "Deep cleaning of all interior surfaces, including vacuum, steaming, and leather conditioning.",
         price: "$79.99"
+    },
+    {
+        img: "/img/services4.webp",
+        title: "",
+        description: "",
+        price: ""
     },
 ]
 

@@ -139,7 +139,7 @@ export const Footer = () => {
           <div className='hidden md:block'>
             <h4 className='text-[18px] font-semibold mb-3'>Join Our Exclusive Subscription Plan! </h4>
             <p className='text-[14px] my-3'>Get 10 premium car washes every month with priority access and exclusive benefits.</p>
-            <button className='bg-[#2291EA] px-6 py-[6px] rounded-lg mt-1'>Get Subscription</button>
+            <button className='bg-[#2291EA] px-6 py-[6px] rounded-lg mt-1'><Link href={"/subscriptions"}>Get Subscription</Link></button>
           </div>
         </div>
         <hr className='hidden md:block mt-8 pb-8' />

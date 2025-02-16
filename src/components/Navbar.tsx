@@ -6,6 +6,7 @@ import Link from "next/link";
 import { DetailsInfo, SocialIcon } from "../types";
 import { NavItems } from "../app/constant";
 import { usePathname } from "next/navigation";
+import { BsTiktok } from "react-icons/bs";
 
 
 
@@ -19,17 +20,17 @@ const Navbar = () => {
         {
             Icon: <Clock size={16} className="text-[#4B5563] lg:text-white" />,
             name: "Opening Hour:",
-            details: "Everyday, 8:00-6:00",
+            details: "Everyday,  9am-5pm",
         },
         {
             Icon: <Phone size={16} className="text-[#4B5563] lg:text-white" />,
             name: "Call Us:",
-            details: "01-1534567 | 9808116740",
+            details: "0451536520",
         },
         {
             Icon: <Mail size={16} className="text-[#4B5563] lg:text-white" />,
             name: "Email Us:",
-            details: "info@sonic.com",
+            details: "admin@sonichandcarwash.com",
         },
     ];
 
@@ -37,23 +38,19 @@ const Navbar = () => {
     const SocialMediaIcon: SocialIcon[] = [
         {
             icon: <Facebook size={16} color="white" />,
-            href: "/'"
+            href: "https://www.facebook.com/profile.php?id=61571553969247"
         },
         {
             icon: <Instagram size={16} color="white" />,
-            href: "/"
+            href: "https://www.instagram.com/sonichandcarwash"
         },
         {
-            icon: <Youtube size={16} color="white" />,
-            href: "/"
-        },
-        {
-            icon: <Linkedin size={16} color="white" />,
-            href: "/"
+            icon: <BsTiktok size={16} color="white" />,
+            href: "https://www.tiktok.com/@sonichandcarwash"
         },
         {
             icon: <PhoneCallIcon size={16} color="white" />,
-            href: "/"
+            href: "https://wa.me/61451536520"
         },
     ]
 
