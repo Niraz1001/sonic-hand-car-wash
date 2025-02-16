@@ -10,7 +10,7 @@ const About = () => {
 
       {/* About Section */}
       <div className='max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-10 lg:py-16 flex flex-col justify-center items-center gap-10'>
-        <Image src={"/img/a95a4eeaa13507e45be83dac9ee1b36b.png"} width={91} height={39} alt='logo' />
+        <Image src={"/img/logo.webp"} width={91} height={39} alt='logo' />
         <p className='max-w-[601px] mx-auto text-center text-sm lg:text-base'>At Sonic Hand Car Wash, we believe that every vehicle deserves meticulous care. Founded in 2015, our team has been dedicated to providing hand-crafted washing techniques that ensure every inch of your car shines.</p>
       </div>
 
@@ -18,7 +18,7 @@ const About = () => {
 
       <div className='max-w-7xl mx-auto px-5 md:px-8 lg:px-8 pb-16'>
         <div className=' max-w-4xl mx-auto bg-white py-5 px-5 lg:px-10 lg:py-16 gap-10 rounded-2xl flex flex-col lg:flex-row items-center '>
-          <Image src={"/img/our story.png"} alt='img' height={352} width={352} className='shadow-lg rounded-2xl' />
+          <Image src={"/img/our story.webp"} alt='img' height={352} width={352} className='shadow-lg rounded-2xl' />
           <div>
             <h4 className='text-2xl lg:text-[32px] font-bold  mb-4 lg:mb-7 text-center lg:text-left'>Our Story</h4>
             <p className='text-sm lg:text-[18px] text-[#4B5563] mb-5'>Founded in 2015, Sonic Hand Car Wash started as a small family business with a passion for cars and customer service. Over the years, we have grown into a trusted name, offering premium hand washes and eco-friendly cleaning solutions.</p>
