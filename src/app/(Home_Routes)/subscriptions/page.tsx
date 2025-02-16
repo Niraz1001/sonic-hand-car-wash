@@ -30,7 +30,7 @@ const Subscriptions = () => {
 
   return (
     <div>
-      <HeroSection img={"/img/subscription.jfif"} tittle={"About Sonic Hand Car Wash"} />
+      <HeroSection img={"/img/subscription.webp"} tittle={"About Sonic Hand Car Wash"} />
 
       {/* Subscription card */}
       <div className='max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-16'>

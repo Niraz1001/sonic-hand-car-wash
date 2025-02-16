@@ -7,7 +7,7 @@ import Testimonial from '@/src/components/Testimonial'
 const Services = () => {
   return (
     <div>
-      <HeroSection img={"/img/services.jfif"} tittle={"About Sonic Hand Car Wash"} />
+      <HeroSection img={"/img/services.webp"} tittle={"About Sonic Hand Car Wash"} />
 
       {/* Our services section */}
 

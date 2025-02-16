@@ -65,7 +65,7 @@ const Enquiry = () => {
 
   return (
     <div className="w-full">
-      <HeroSection img={"/img/contact.jfif"} tittle={"Contact Us"} />
+      <HeroSection img={"/img/contact.webp"} tittle={"Contact Us"} />
 
       <div className=" bg-white">
         

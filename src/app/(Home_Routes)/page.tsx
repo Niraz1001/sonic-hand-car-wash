@@ -61,7 +61,7 @@ const HomePage = () => {
       {/* Hero Section*/}
       <div className='w-screen h-[200px] relative lg:h-[379.91px]'> {/* Set a fixed height */}
         <Image
-          src={"/img/Bg.png"}
+          src={"/img/Bg.webp"}
           alt='HeroSectionImg'
           fill // Fills the container
           className='object-cover w-auto h-auto'
