@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-import { Clock, Phone, Mail, Facebook, Instagram, Youtube, Linkedin, PhoneCallIcon, AlignJustify, X } from "lucide-react";
+import { Clock, Phone, Mail, Facebook, Instagram, PhoneCallIcon, AlignJustify, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { DetailsInfo, SocialIcon } from "../types";
