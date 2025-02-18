@@ -1,11 +1,12 @@
 'use client'
-import { Clock, FacebookIcon, InstagramIcon, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react'
+import { Clock, FacebookIcon, InstagramIcon, Mail, MapPin, Phone, } from 'lucide-react'
 import React, { useState } from 'react'
 import { CustomerSupport, NavItems } from '../app/constant'
 import Link from 'next/link'
 import { DetailsInfo } from '../types'
 import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
 import { FaFacebookF } from 'react-icons/fa'
+import { BsTiktok } from 'react-icons/bs'
 
 export const Footer = () => {
 
@@ -17,15 +18,15 @@ export const Footer = () => {
 
     {
       Icon: <Phone size={16} color="white" />,
-      name: "01-1534567 | 9808116740",
+      name: "0451536520",
     },
     {
       Icon: <Mail size={16} color="white" />,
-      name: "info@sonic.com",
+      name: "admin@sonichandcarwash.com",
     },
     {
       Icon: <Clock size={16} color="white" />,
-      name: "Everyday, 8:00-6:00",
+      name: "Everyday, 9am-5pm",
 
     },
 
@@ -138,7 +139,7 @@ export const Footer = () => {
           </div>
           <div className='hidden md:block'>
             <h4 className='text-[18px] font-semibold mb-3'>Join Our Exclusive Subscription Plan! </h4>
-            <p className='text-[14px] my-3'>Get 10 premium car washes every month with priority access and exclusive benefits.</p>
+            <p className='text-[14px] my-3'>Get $10.00 discount on every referral you make</p>
             <button className='bg-[#2291EA] px-6 py-[6px] rounded-lg mt-1'><Link href={"/subscriptions"}>Get Subscription</Link></button>
           </div>
         </div>
@@ -147,10 +148,9 @@ export const Footer = () => {
         <div className='hidden md:flex justify-between items-start'>
           <p className='text-xs md:text-base'>© 2025 Sonic Hand Car Wash. All Rights Reserved. Designed by <a href='https://neomatrix.live/'>NeoMatrix</a></p>
           <div className='flex items-center gap-5'>
-            <FacebookIcon size={16} color='white' />
-            <InstagramIcon size={16} color='white' />
-            <Twitter size={16} color='white' />
-            <Linkedin size={16} color='white' />
+            <a href='https://www.facebook.com/profile.php?id=61571553969247' target="_blank"> <FacebookIcon size={16} color='white' /> </a>
+            <a href='https://www.instagram.com/sonichandcarwash' target="_blank">  <InstagramIcon size={16} color='white' /> </a>
+            <a href='https://www.tiktok.com/@sonichandcarwash' target="_blank"><BsTiktok size={16} color='white' /> </a>
           </div>
         </div>
 
@@ -158,19 +158,16 @@ export const Footer = () => {
 
         <div className='lg:hidden md:hidden'>
           <div className='flex items-center justify-center gap-5 my-8'>
-            <FaFacebookF size={30} color='black' className='bg-white rounded-full p-1 />
-            <Facebook '/>
-            <InstagramIcon size={30} color='black' className='bg-white rounded-full p-1' />
-            <Twitter size={30} color='black' className='bg-white rounded-full p-1' />
-            <Linkedin size={30} color='black' className='bg-white rounded-full p-1' />
+            <a href='https://www.facebook.com/profile.php?id=61571553969247' target="_blank"> <FaFacebookF size={30} color='black' className='bg-white rounded-full p-1 ' /> </a>
+            <a href='https://www.instagram.com/sonichandcarwash' target="_blank">  <InstagramIcon size={30} color='black' className='bg-white rounded-full p-1' /> </a>
+            <a href='https://www.tiktok.com/@sonichandcarwash' target="_blank"> <BsTiktok size={30} color='black' className='bg-white rounded-full p-1' /> </a>
           </div>
           <p className='text-xs text-center'>© 2025 Sonic Hand Car Wash. All Rights Reserved. Designed by <a href='https://neomatrix.live/'>NeoMatrix</a></p>
         </div>
-
-
-
       </div>
+
     </div>
+
 
   )
 }

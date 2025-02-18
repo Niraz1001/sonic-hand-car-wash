@@ -91,9 +91,9 @@ const HomePage = () => {
 
           <div>
             <div className='flex items-start gap-1 md:gap-3 mb-5 text-[12px] md:text-[16px]'>
-              <p><HelpCircleIcon size={18} color='black' className='mt-1' /></p>
+              <p><HelpCircleIcon size={18} color='black' /></p>
               <div>
-                <p className='leading-none'>Get 10 premium hand car washes every month with our exclusive subscription plan!</p>
+                <p className='leading-none'>Get $10.00 discount on every referral you make</p>
                 <p className='my-5'>Hassle-free car care, great savings, and ultimate convenience.</p>
                 <button className='bg-[#2291EA] px-3 md:px-10 py-2 rounded-lg mt-1 text-white'><Link href={"/about"}>Learn more →</Link></button>
               </div>

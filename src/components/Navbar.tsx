@@ -120,7 +120,7 @@ const Navbar = () => {
                     <div className="hidden md:flex space-x-4">
                         {
                             SocialMediaIcon.map((item, idx) => (
-                                <Link key={idx} href={item.href}>
+                                <Link key={idx} href={item.href} target="_blank">
                                     <div className="bg-black text-white p-[6px] md:p-2 lg:p-2 rounded-full">{item.icon}</div>
                                 </Link>
                             ))

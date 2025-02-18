@@ -68,7 +68,7 @@ const Enquiry = () => {
       <HeroSection img={"/img/contact.webp"} tittle={"Contact Us"} />
 
       <div className=" bg-white">
-        
+
         <main className="max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-10 md:py-16">
           <p className="text-[30px] md:text-3xl xl:text-[30px] font-bold xl:mb-10">
             Send Us a Message
@@ -79,7 +79,7 @@ const Enquiry = () => {
             <div className="flex flex-col gap-6 w-full md:w-[50%] xl:w-[440px] xl:h-[510px] mt-4">
               <iframe
                 className="h-full w-full rounded-lg"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14137.003624034116!2d85.34463115!3d27.6477079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1738831163526!5m2!1sen!2snp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.234567890123!2d144.9000000!3d-37.8000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d1234567890%3A0x1234567890abcdef!2s12%20Hampstead%20Road%2C%20Maidstone%20VIC%203012%2C%20Australia!5e0!3m2!1sen!2sau!4v1738831163526!5m2!1sen!2sau"
                 loading="lazy"
               />
               <div className="flex items-center justify-center gap-5 border rounded-lg shadow-sm">

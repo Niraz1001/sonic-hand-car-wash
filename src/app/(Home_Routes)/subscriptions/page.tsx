@@ -1,11 +1,10 @@
 import HeroSection from '@/src/components/Herosection'
 import SubscriptionCard from '@/src/components/SubscriptionCard'
-import SubscriptionPlan from '@/src/components/SubscriptionPlan'
 import { SubscriptionCards } from '@/src/types'
 import React from 'react'
 import { BsPatchQuestion } from 'react-icons/bs'
 import { FaCar, FaCrown, } from 'react-icons/fa'
-import { SubscriptionPlanData } from '../../constant'
+
 
 const Subscriptions = () => {
 
@@ -47,9 +46,9 @@ const Subscriptions = () => {
 
       {/* Subscription plan */}
           <div className='max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-0 md:py-16 '>
-              <h4 className='text-center text-xl md:text-[36px] font-bold'>Choose Your Plan</h4>
-              <p className='text-center text-[18px] text-[#4B5563] mb-16 mt-3'>Select the perfect subscription that fits your needs</p>
-              <div className='my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5'>
+              <h4 className='text-center text-xl md:text-[36px] font-bold'> Subscription Plan</h4>
+              <p className='text-center text-[24px] text-[#4B5563] mb-16 mt-3'>Stay tuned for subscription plans</p>
+              {/* <div className='my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5'>
                   {
                     SubscriptionPlanData.map((item,idx)=>(
                       <div key={idx}>
@@ -57,7 +56,10 @@ const Subscriptions = () => {
                       </div>
                     ))
                   }
-              </div>
+              </div> */}
+
+                  <h4 className='text-2xl text-center'></h4>
+
           </div>
     </div>
   )
