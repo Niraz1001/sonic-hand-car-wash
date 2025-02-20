@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
             <h2 className='text-3xl font-bold text-center mb-6'>Privacy Policy</h2>
             <div className='p-10 rounded-lg'>
                 <p className='text-lg leading-relaxed'>
-                    <strong>At Sonic hand car wash</strong>, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you visit our website or use our services. By using our services, you agree to the terms outlined in this Privacy Policy.
+                At<strong> Sonic hand car wash</strong>, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you visit our website or use our services. By using our services, you agree to the terms outlined in this Privacy Policy.
                 </p>
 
                 <h3 className='text-xl font-semibold mt-6'>Information We Collect</h3>

@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { Services } from "@/src/types";
+import { useEffect, useState } from 'react';
 
 
 interface dataProps {
@@ -11,16 +12,58 @@ interface dataProps {
 
 const Card = ({ Item }: dataProps) => {
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  useEffect(() => {
+
+    if (isModalOpen === true) {
+      document.body.classList.add("overflow-hidden")
+    }
+    else {
+      return document.body.classList.remove("overflow-hidden")
+    }
+
+
+  }, [isModalOpen])
+
+
   return (
     <>
       <div className='shadow-md rounded-xl overflow-hidden w-full bg-white transition-transform duration-300  hover:translate-y-[-10px]'>
-        <Image src={Item.img} alt={Item.title} width={394.66} height={256} className='w-full h-auto object-cover cursor-pointer' onClick={() => window.open(Item.img, "_blank")} />
-        {/* <div className='p-10'>
-        <h4 className='text-[16px] md:text-2xl font-bold  text-[#0B0B0B]'>{Item.title}</h4>
-            <p className='text-[#0B0B0B] my-3 md:my-7 text-[12px] md:text-[16px] h-[70px]'>{Item.description}</p>
-            <p className='text-[#2291EA] text-[18px] md:text-2xl font-bold'>{Item.price}</p>
-        </div> */}
+        <Image src={Item.img} alt={Item.title} width={394.66} height={256} className='w-full h-auto object-cover cursor-pointer' onClick={openModal} />
       </div>
+
+
+      {isModalOpen && (
+        <div
+          className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'
+          onClick={closeModal}
+        >
+          <div className='relative max-w-4xl w-full p-4'>
+            <Image
+              src={Item.img}
+              alt={Item.title}
+              width={800}
+              height={600}
+              className='w-full h-auto object-cover'
+            />
+            <button
+              className='absolute top-0 right-0 bg-white rounded-full p-2 shadow-lg w-10 h-10'
+              onClick={closeModal}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
 
     </>
   )

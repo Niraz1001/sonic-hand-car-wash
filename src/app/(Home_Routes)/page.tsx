@@ -173,7 +173,7 @@ const HomePage = () => {
 
       <div className='max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-5 lg:py-16'>
         <h1 className='text-[25px] md:text-[36px]  font-bold text-center mb-16 '>Hear From Our Clients</h1>
-        <div className='flex flex-col lg:flex-row gap-8 justify-center lg:justify-start items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8'>
         {
          TestimonialData.map((item, idx)=>(
           <div key={idx}>

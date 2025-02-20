@@ -11,7 +11,8 @@ const About = () => {
       {/* About Section */}
       <div className='max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-10 lg:py-16 flex flex-col justify-center items-center gap-10'>
         <Image src={"/img/logo.webp"} width={91} height={39} alt='logo' />
-        <p className='max-w-[601px] mx-auto text-center text-sm lg:text-base'>A family-owned business, grown into a trusted community name since YOE. Whether you need a quick wash or a detailed cleaning, we offer services tailored to your needs.</p>
+        <p className='max-w-[620px] mx-auto text-center text-sm lg:text-base'>A family-owned business, grown into a trusted community name. Whether you need a quick wash or a detailed cleaning, we offer services tailored to your needs. <br/> <br/>Fast. Clean. Precise.
+        </p>
       </div>
 
       {/* Our Story Section */}
@@ -21,7 +22,7 @@ const About = () => {
           <Image src={"/img/our story.webp"} alt='img' height={352} width={352} className='shadow-lg rounded-2xl' />
           <div>
             <h4 className='text-2xl lg:text-[32px] font-bold  mb-4 lg:mb-7 text-center'>Our Story</h4>
-            <p className='text-sm lg:text-[14px] text-[#4B5563] mb-5'>Sonic Hand Car Wash is a family-owned business that has grown into a trusted community name since YOE. We offer premium hand car wash services, focusing on quality, attention to detail, and exceptional customer service. Our dedicated team treats every car with care, using eco-friendly products to ensure a spotless finish while protecting the environment.</p>
+            <p className='text-sm lg:text-[14px] text-[#4B5563] mb-5'>Sonic Hand Car Wash is a family-owned business that has grown into a trusted community. We offer premium hand car wash services, focusing on quality, attention to detail, and exceptional customer service. Our dedicated team treats every car with care, using eco-friendly products to ensure a spotless finish while protecting the environment.</p>
             <h4 className='text-xl my-4 text-black font-bold text-center'>What sets us apart?</h4>
             <p className='text-sm lg:text-[14px] text-[#4B5563]' >
               At Sonic Hand Car Wash, it is not just about cleaning cars. it is about the love and care we pour into each wash and the strong relationships we build with our clients. Since we focus on quality over quick fixes, our customers trust us to treat their vehicles with the utmost respect. Visit us today and discover why we’re the preferred hand car wash in town. Your car deserves the best—and so do you!
@@ -37,7 +38,7 @@ const About = () => {
           <div className='flex justify-between items-center text-white'>
 
             <div>
-              <h4 className='text-center text-lg md:text-[36px] font-bold md:mb-5'>10,000+</h4>
+              <h4 className='text-center text-lg md:text-[36px] font-bold md:mb-5'>1,000+</h4>
               <p className='text-xs md:text-[20px] text-center'>Happy Customers Served</p>
             </div>
 

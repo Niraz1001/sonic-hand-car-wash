@@ -45,19 +45,19 @@ export const ServicesCard: Services[] = [
 
 export const TestimonialData: Testimonials[] = [
     {
-        img: "/img/testimonial-4.webp",
+        img: "/img/testimonial-2.webp",
         name: "Sandra Scott",
-        title: "Premium Care!",
+        title: "Exceptional service!!",
         description: "My car shines like a new one. Highly recommend it. ",
     },
     {
-        img: "/img/testimonial-4.webp",
-        name: "Ava Thompson",
+        img: "/img/testimonial-3.webp",
+        name: "Carl James",
         title: "Fantastic service! ",
         description: "They cleaned my car spotlessly and quickly. Friendly staff and affordable prices. I recommend it.",
     },
     {
-        img: "/img/testimonial-2.webp",
+        img: "/img/testimonial-4.webp",
         name: "Ram Maharjan",
         title: "Great service!",
         description: "They made my car look like a new one. Staff were polite and careful when handling my car",

@@ -6,8 +6,7 @@ const TermCondition = () => {
 
 
 
-            <h2 className='text-2xl md:text-3xl text-center font-bold mb-3'>Terms and Conditions for Sonic hand wash car
-            </h2>
+            <h2 className='text-2xl md:text-3xl text-center font-bold mb-3'>Terms and Conditions</h2>
             <p className='text-gray-700 text-center mb-10'>Effective Date: 23 Feb, 2025</p>
 
             <div className='md:px-10'>
