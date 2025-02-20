@@ -61,7 +61,7 @@ const Navbar = () => {
                 {/* Top Section - Logo & Contact Info */}
                 <div className="flex justify-between items-center  py-4 gap-2 lg:gap-10">
                     {/* Logo */}
-                    <div>
+                    <Link href={"/"}>
                         <Image
                             src="/img/logo.webp"
                             height={39}
@@ -69,7 +69,7 @@ const Navbar = () => {
                             alt="logo"
                             className="w-[64px] h-[27px] md:w-full md:h-full"
                         />
-                    </div>
+                    </Link>
 
                     {/* Contact Info */}
                     <div className="hidden md:flex space-x-1 lg:space-x-8 ">

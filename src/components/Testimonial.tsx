@@ -21,7 +21,7 @@ const Testimonial = ({Item}:(TestimonialProps)) => {
                     />
                     <div>
                         <h1 className='text-[16px] lg:text-lg font-bold text-[#202C45] text-center lg:text-left'> {Item.name} </h1>
-                        <div className='flex gap-2 justify-center lg:justify-start my-2 lg:my-0 text-[14px] lg:text-base'><FaQuoteLeft className='w-3 h-4 lg:w-6 lg:h-6 text-[#2291EA]'/> <p className=' text-[#444444]'>{Item.title}</p></div>
+                        <div className='flex gap-2 justify-center lg:justify-start my-2 lg:my-0 text-[14px] lg:text-base'><FaQuoteLeft className='w-3 h-4 lg:w-6 lg:h-6 text-[#2291EA]'/> <p className=' text-[#444444] w-full'>{Item.title}</p></div>
                         <p className='text-[#444444] text-center lg:text-left text-[12px] md:text-base'>{Item.description}</p>
 
                     </div>

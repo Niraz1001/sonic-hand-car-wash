@@ -178,7 +178,7 @@ const Enquiry = () => {
 
       </div>
 
-      <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-10 md:py-16">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-10 md:py-16 scroll-smooth scroll-m-10" id="faq">
         <p className="font-bold text-center text-xl md:text-2xl xl:text-4xl"> Frequently Asked Questions </p>
         <div className="max-w-3xl mx-auto mt-10">
           {

@@ -13,16 +13,16 @@ const HomePage = () => {
 
   const Feature: DetailsInfo[] = [
     {
-      Icon: <Check size={16} color="#2291EA" />,
-      name: "Premium Service Guaranteed",
+      Icon: <Check size={18} color="white" className="bg-[#2291EA] p-[3px] rounded-full"/>,
+      name: "Fast",
     },
     {
-      Icon: <Check size={16} color="#2291EA" />,
-      name: "Flexible Scheduling",
+      Icon: <Check size={18} color="white" className="bg-[#2291EA] p-[3px] rounded-full"/>,
+      name: "Clean",
     },
     {
-      Icon: <Check size={16} color="#2291EA" />,
-      name: "Priority Lane Access",
+      Icon: <Check size={18} color="white" className="bg-[#2291EA] p-[3px] rounded-full" />,
+      name: "Precise",
     },
   ]
 
@@ -79,6 +79,7 @@ const HomePage = () => {
               <MapPin size={16} color='black'/> <p className='text-[12px] md:text-[16px]'>Australia</p>
             </div>
 
+            <div className='flex flex-col md:flex-row gap-2 md:gap-5'>
             {
               Feature.map((item, idx) => (
                 <div key={idx} className='flex items-center gap-2 mt-2 text-[12px] md:text-[16px]'>
@@ -86,6 +87,7 @@ const HomePage = () => {
                 </div>
               ))
             }
+            </div>
 
           </div>
 
@@ -107,9 +109,9 @@ const HomePage = () => {
       {/* Our services section */}
 
       <div className='container max-w-7xl mx-auto px-5 md:px-8 lg:px-8 py-10 md:py-16 '>
-        <h4 className='text-center text-[25px] md:text-[32px] font-bold'>Our services</h4>
-        <p className='mt-5 text-center text-[12px] md:text-[16px] px-5 md:px-5'>Experience premium car care services tailored to keep your vehicle looking its absolute best.</p>
-        <div className='mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-5'>
+        <h4 className='text-center text-[25px] md:text-[48px] font-bold'>Our services</h4>
+        <p className='text-center text-[12px] md:text-[16px] px-5 md:px-5'>Experience premium car care services tailored to keep your vehicle looking its absolute best.</p>
+        <div className='mt-10 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-5 lg:gap-5'>
           {
             ServicesCard.map((item, idx) => (
               <div key={idx}>

@@ -146,7 +146,7 @@ export const Footer = () => {
         <hr className='hidden md:block mt-8 pb-8' />
         {/* Destop view */}
         <div className='hidden md:flex justify-between items-start'>
-          <p className='text-xs md:text-base'>© 2025 Sonic Hand Car Wash. All Rights Reserved. Designed by <a href='https://neomatrix.live/'>NeoMatrix</a></p>
+          <p className='text-xs md:text-base'>© 2025 Sonic Hand Car Wash. All Rights Reserved Developed by <a href='https://neomatrix.live/'>NeoMatrix</a></p>
           <div className='flex items-center gap-5'>
             <a href='https://www.facebook.com/profile.php?id=61571553969247' target="_blank"> <FacebookIcon size={16} color='white' /> </a>
             <a href='https://www.instagram.com/sonichandcarwash' target="_blank">  <InstagramIcon size={16} color='white' /> </a>
@@ -162,7 +162,7 @@ export const Footer = () => {
             <a href='https://www.instagram.com/sonichandcarwash' target="_blank">  <InstagramIcon size={30} color='black' className='bg-white rounded-full p-1' /> </a>
             <a href='https://www.tiktok.com/@sonichandcarwash' target="_blank"> <BsTiktok size={30} color='black' className='bg-white rounded-full p-1' /> </a>
           </div>
-          <p className='text-xs text-center'>© 2025 Sonic Hand Car Wash. All Rights Reserved. Designed by <a href='https://neomatrix.live/'>NeoMatrix</a></p>
+          <p className='text-xs text-center'>© 2025 Sonic Hand Car Wash. All Rights Reserved Developed by <a href='https://neomatrix.live/'>NeoMatrix</a></p>
         </div>
       </div>
 

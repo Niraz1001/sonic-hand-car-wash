@@ -10,33 +10,33 @@ export const NavItems: NavItem[] = [
 ];
 
 export const CustomerSupport: NavItem[] = [
-    { name: "FAQ", href: "/" },
-    { name: "Terms & Conditions", href: "/" },
-    { name: "Privacy Policy", href: "/" },
+    { name: "FAQ", href: "/enquiry#faq" },
+    { name: "Terms & Conditions", href: "/termsconditions" },
+    { name: "Privacy Policy", href: "/privacypolicy" },
 ];
 
 
 export const ServicesCard: Services[] = [
     {
-        img: "/img/services1.webp",
+        img: "/img/services5.webp",
         title: "Basic Hand Wash",
         description: "Thorough exterior wash using premium products and hand-drying for a pristine finish.",
         price: "$29.99"
     },
     {
-        img: "/img/services2.webp",
+        img: "/img/services6.webp",
         title: "Deluxe Wash & Wax",
         description: "Complete exterior treatment including premium wax for long-lasting protection and shine.",
         price: "$59.99"
     },
     {
-        img: "/img/services3.webp",
+        img: "/img/services7.webp",
         title: "Interior Cleaning",
         description: "Deep cleaning of all interior surfaces, including vacuum, steaming, and leather conditioning.",
         price: "$79.99"
     },
     {
-        img: "/img/services4.webp",
+        img: "/img/services8.webp",
         title: "",
         description: "",
         price: ""
@@ -46,21 +46,21 @@ export const ServicesCard: Services[] = [
 export const TestimonialData: Testimonials[] = [
     {
         img: "/img/testimonial-4.webp",
-        name: "Ram Maharjan",
-        title: " Top-notch repair service!",
-        description: "They revived my old bik beautifully Friendly team and great turnaround time. Absolutely satisfied!",
+        name: "Sandra Scott",
+        title: "Premium Care!",
+        description: "My car shines like a new one. Highly recommend it. ",
     },
     {
         img: "/img/testimonial-4.webp",
-        name: "Hari Shrestha",
-        title: "  Exceptional service!",
-        description: "shines like new. Friendly staff and quick turnaround. Highly recommend this car wash!",
+        name: "Ava Thompson",
+        title: "Fantastic service! ",
+        description: "They cleaned my car spotlessly and quickly. Friendly staff and affordable prices. I recommend it.",
     },
     {
         img: "/img/testimonial-2.webp",
-        name: "Cita Dangol",
-        title: " Fantastic service! They",
-        description: "fixed my bike quickly and professionally. Friendly staff and great prices. Highly recommend for repairs!",
+        name: "Ram Maharjan",
+        title: "Great service!",
+        description: "They made my car look like a new one. Staff were polite and careful when handling my car",
     },
 
 ]
@@ -68,27 +68,27 @@ export const TestimonialData: Testimonials[] = [
 
 export const SubscriptionPlanData: SubscriptionPlans[] = [
     {
-      title: "Basic Plan",
-      price: "29.99",
-      features: ["4 washes per month", "Priority service", "Basic exterior wash"],
-      isPopular: false,
+        title: "Basic Plan",
+        price: "29.99",
+        features: ["4 washes per month", "Priority service", "Basic exterior wash"],
+        isPopular: false,
     },
     {
-      title: "Standard Plan",
-      price: "49.99",
-      features: ["6 washes per month", "Priority service", "Interior cleaning", "Wheel cleaning"],
-      isPopular: true, // Highlight this card
-      button: "Most Popular"
+        title: "Standard Plan",
+        price: "49.99",
+        features: ["6 washes per month", "Priority service", "Interior cleaning", "Wheel cleaning"],
+        isPopular: true, // Highlight this card
+        button: "Most Popular"
     },
     {
-      title: "Premium Plan",
-      price: "79.99",
-      features: ["10 washes per month", "Premium detailing", "Exclusive discounts", "Full service package"],
-      isPopular: false,
+        title: "Premium Plan",
+        price: "79.99",
+        features: ["10 washes per month", "Premium detailing", "Exclusive discounts", "Full service package"],
+        isPopular: false,
     },
-  ];
+];
 
-  export const FaqData: Faq[]= [
+export const FaqData: Faq[] = [
     {
         title: "Do I need an appointment for a car wash?",
         des: "No, walk-ins are welcome! However, booking in advance ensures quicker service."
@@ -101,4 +101,4 @@ export const SubscriptionPlanData: SubscriptionPlans[] = [
         title: "How long does a car wash take?",
         des: "A basic hand wash takes approximately 20-30 minutes."
     },
-  ]
+]
