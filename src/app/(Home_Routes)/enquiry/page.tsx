@@ -5,6 +5,7 @@ import HeroSection from "@/src/components/Herosection";
 import React, { ChangeEvent, useState } from "react";
 import { FaDirections } from "react-icons/fa";
 import { FaqData } from "../../constant";
+import { sendMail } from "./action";
 
 const Enquiry = () => {
 
@@ -32,25 +33,14 @@ const Enquiry = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/SendEmail', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+      const { message, error } = await sendMail(formData);
 
-      const contentType = response.headers.get('Content-Type');
-      if (!contentType || !contentType.includes('application/json')) {
-        throw new Error('Invalid JSON response. Check API endpoint.');
+      if (error) {
+        throw new Error(error || 'Failed to send email.');
       }
 
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.message || 'Failed to send email.');
-      }
-
-      setResponseMessage('Email Sent!');
-      setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form
+      setResponseMessage(message || 'Email Sent!');
+      setFormData({ name: '', email: '',phone: '', message: '' }); // Reset form
     } catch (error) {
       console.error('Error:', error);
       setError(error instanceof Error ? error.message : 'An unknown error occurred.');
@@ -58,10 +48,6 @@ const Enquiry = () => {
       setLoading(false)
     }
   };
-
-
-
-
 
   return (
     <div className="w-full">
